@@ -5,7 +5,7 @@
 	width: 400px;
 	margin: 0 auto;
 	border-radius: 200px;
-	box-shadow: 10px 10px 89px black;
+	box-shadow: 10px 10px 90px black;
 }
 .renglon {
 	height: 200px;
@@ -16,61 +16,68 @@
 	width: 410px;
 }
 .boton-naranja{
+	cursor: pointer;
 	background-color: #FF9500;
-	box-shadow: 10px 10px 89px black;
+	box-shadow: 10px 10px 90px black;
 }
 .boton-naranja:active{
 	background-color: #DE8100;
-	box-shadow:inset 10px 10px 10px black;
+	box-shadow:inset 10px 10px 25px black;
 }
 .oculto {
 	display: none;
 }
 .chiquito{
+	color:#ffffff;
 	font-size: 20px;
 	height: 100px;
 	width: 49%;
-	border: double 4px black;
+	border: double 4px #ffffff;
+	cursor: pointer;
 }
 .chiquito:active{
-	box-shadow:inset 10px 10px 10px black;
+	box-shadow:inset 10px 10px 25px black;
 }
 #ok{
+	color:#ffffff;
 	font-weight: bold;
 	font-size: 20px;
 	background-color:#00BFFF;
-	box-shadow: 10px 10px 89px black; 
+	box-shadow: 10px 10px 90px black; 
+	cursor: pointer;
 }
 #ok:active{
-	box-shadow:inset 10px 10px 10px black;
+	box-shadow:inset 10px 10px 25px black;
 }
 .boton-rojo{
 	height: 100px;
 	width: 404px;
 	background-color: #00BFFF;
 	border: double 4px black;
-	box-shadow: 10px 10px 89px black;
+	box-shadow: 10px 10px 90px #ffffff;
+	cursor: pointer;
 	
 }
 .boton-rojo:hover{
 	background-color: #01A9DB;
-	box-shadow: 10px 10px 10px #3B0B0B;
+	box-shadow: 10px 10px 25px #3B0B0B;
 }
 .boton-rojo:active{
-	box-shadow:inset 10px 10px 10px black;
+	box-shadow:inset 10px 10px 25px black;
 }
 .boton {
 	margin:0 auto;
 	width: 200px;
 	height: 200px;
-	border: double 4px black;
-	box-shadow: 10px 10px 89px black; 
+	border: double 4px #ffffff;
+	box-shadow: 10px 10px 90px black;
+	cursor: pointer; 
 }
 .boton:hover {
-	box-shadow: 10px 10px 10px black;
+	box-shadow: 10px 10px 25px black;
 }
 .boton:active {
-	box-shadow:inset 10px 10px 10px black;
+	box-shadow:inset 10px 10px 25px black;
 
 }
 .uno{
@@ -112,4 +119,40 @@
 }
 .cuatro-secuencia{
 	background-color: #AFB501;
+}
+.seccion-musica{
+	width: 200px;
+	height: 145px;
+	text-align: center;
+	background-color: #58FA58;
+	box-shadow: 10px 10px 25px black;
+	top: 435px;
+    right: 55px;
+    position: absolute;
+}
+@media(max-width: 930px){
+	.seccion-musica{
+		top:625px;
+	}
+}
+.seccion-musica h2{
+	color: #ffffff;
+	font-size: 25px;
+}
+.control{
+	width: 70px;
+	height: 40px;
+	font-size: 25px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.control:active{
+	box-shadow:inset 10px 10px 25px black;
+}
+
+.play{
+	background-color: #F781F3;
+}
+.stop{
+	background-color: #81F7F3;
 }

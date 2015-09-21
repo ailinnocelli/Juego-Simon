@@ -8,8 +8,10 @@ $(document).on ("ready", function (){
 	secuenciaDelJuego = new Array();
 	secuenciaDelUsuario = new Array();
 	var mensaje="Bien ! Sigamos jugando!";
+	var sonido = true;
 
 	$("#comenzar").on ("click", function(){
+		reproducirAudio (sonido);
 		cambioDeBotones();
 		secuenciaDelJuego = sumarUnMovimiento(secuenciaDelJuego, index);
 		index ++		
@@ -17,11 +19,7 @@ $(document).on ("ready", function (){
 	});
 	
 	$(".boton").on ("click", function(){
-		try{
-			 document.getElementById("audio").play("button_tiny");
-		}catch(e){
-		}
-		
+		reproducirAudio (sonido);
 		var self = this;
 		var numeroQueClickeoElUsuario = clickUsuario(self);
 		guardarNumeroQueClickeoElUsusarioEnArray(secuenciaDelUsuario,contador,numeroQueClickeoElUsuario);
@@ -30,6 +28,7 @@ $(document).on ("ready", function (){
 		perdiste(resultadoParcial, mensaje, secuenciaDelUsuario, secuenciaDelJuego);
 	});
 	$("#ok").on("click", function(){
+		reproducirAudio (sonido);
 		resultadoTotalDeSecuencias = compararSecuenciasCompletas(secuenciaDelJuego, secuenciaDelUsuario);
 		contador = 0;
 		if(resultadoTotalDeSecuencias == true){
@@ -42,7 +41,22 @@ $(document).on ("ready", function (){
 		index ++
 		mostrarSecuenciaDelJuego(secuenciaDelJuego,aJugar);
 	});
+	$(".stop").on("click", function(){
+		sonido=false;
+	});
+	$(".play").on ("click", function(){
+		sonido=true;
+	});
 
+	function reproducirAudio(sonido){
+		try{
+			if(sonido==true){
+				document.getElementById("audio").play("button_tiny");
+			}
+			
+		}catch(e){
+		}
+	}
 
 	function cambioDeBotones (){
 		$("#comenzar").addClass("oculto");
@@ -138,5 +152,7 @@ $(document).on ("ready", function (){
  		secuenciaDelUsuario = new Array();
  		secuenciaDelJuego = new Array();
  	};
+
+
 
  })

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Simon Juego</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="pagina">
+		<div class="contenedor-juego">
+			<audio id="audio" src="sonidos/cartoon130.mp3"></audio>
+			<!--renglon que incluye el boton uno y dos-->
+			<section class="primer renglon">
+				<button id="1" class="boton uno"></button>
+				<button id="2" class="boton dos"></button>
+			</section>
+			<!--renglon que incluye el boton comenzar/aceptar-->
+			<section class="segundo-renglon">
+				<button id="comenzar" class="boton-naranja chiquito">Comenzar</button>
+				<button id="ok" class="chiquito">OK</button>
+			</section>
+			<!--renglon que incluye el boton tres y cuatro-->
+			<section class="tercer renglon">
+				<button id="3" class="boton tres"></button>
+				<button id="4" class="boton cuatro"></button>
+			</section>
+		</div>
+	</div>
+<ul id="secuenciaDeJuego"></ul>
+</body>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="javascript/ion.sound.min.js"></script>
+<script src="javascript/javascript.js"></script>
+</html>

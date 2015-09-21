@@ -1,0 +1,115 @@
+.pagina{
+	padding-top: 50px;
+}
+.contenedor-juego {
+	width: 400px;
+	margin: 0 auto;
+	border-radius: 200px;
+	box-shadow: 10px 10px 89px black;
+}
+.renglon {
+	height: 200px;
+	width: 410px;
+}
+.segundo-renglon{
+	height: 100px;
+	width: 410px;
+}
+.boton-naranja{
+	background-color: #FF9500;
+	box-shadow: 10px 10px 89px black;
+}
+.boton-naranja:active{
+	background-color: #DE8100;
+	box-shadow:inset 10px 10px 10px black;
+}
+.oculto {
+	display: none;
+}
+.chiquito{
+	font-size: 20px;
+	height: 100px;
+	width: 49%;
+	border: double 4px black;
+}
+.chiquito:active{
+	box-shadow:inset 10px 10px 10px black;
+}
+#ok{
+	font-weight: bold;
+	font-size: 20px;
+	background-color:#00BFFF;
+	box-shadow: 10px 10px 89px black; 
+}
+#ok:active{
+	box-shadow:inset 10px 10px 10px black;
+}
+.boton-rojo{
+	height: 100px;
+	width: 404px;
+	background-color: #00BFFF;
+	border: double 4px black;
+	box-shadow: 10px 10px 89px black;
+	
+}
+.boton-rojo:hover{
+	background-color: #01A9DB;
+	box-shadow: 10px 10px 10px #3B0B0B;
+}
+.boton-rojo:active{
+	box-shadow:inset 10px 10px 10px black;
+}
+.boton {
+	margin:0 auto;
+	width: 200px;
+	height: 200px;
+	border: double 4px black;
+	box-shadow: 10px 10px 89px black; 
+}
+.boton:hover {
+	box-shadow: 10px 10px 10px black;
+}
+.boton:active {
+	box-shadow:inset 10px 10px 10px black;
+
+}
+.uno{
+	border-top-left-radius:200px;
+	background-color: #088A08;
+}
+.dos{
+	border-top-right-radius:200px;
+	background-color: #DF0101;
+}
+.tres{
+	border-bottom-left-radius:200px;
+	background-color: #08088A;
+}
+.cuatro{
+	border-bottom-right-radius:200px;
+	background-color: #F5FD04;
+}
+.uno:active{
+	background-color: #066906;
+}
+.dos:active{
+	background-color: #9C0000;
+}
+.tres:active{
+	background-color: #070765;
+}
+.cuatro:active{
+	background-color: #AFB501;
+}
+.uno-secuencia{
+	background-color: #066906;
+}
+.dos-secuencia{
+	background-color: #9C0000;
+}
+.tres-secuencia{
+	background-color: #070765;
+}
+.cuatro-secuencia{
+	background-color: #AFB501;
+}
